@@ -1,4 +1,4 @@
-global                                                                                                                                                   
+global                                                                                                                       
 #       log /dev/log    local0                                                                                                                           
         log /dev/log    local1 notice                                                                                                                    
         chroot /var/lib/haproxy                                                                                                                          
@@ -53,8 +53,8 @@ frontend load_balancer
 backend web_server                                                                                                                                       
         balance roundrobin                                                                                                                               
         redirect scheme https code 301 if !{ ssl_fc }                                                                                                    
-        server 497117-web-01 54.237.63.166:80 check                                                                                                      
-        server 497117-web-02 52.3.247.149:80 check                                                                                                       
+        server 497117-web-01 100.26.56.137:80 check                                                                                                      
+        server 497117-web-02 34.224.6.137:80 check                                                                                                       
                                                                                                                                                          
 backend letsencrypt-backend                                                                                                                              
         server letsencrypt 127.0.0.1:54321
