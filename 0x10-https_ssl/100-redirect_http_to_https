@@ -47,5 +47,5 @@ frontend webcore-frontend-https
 
 backend webcore-backend
         balance roundrobin
-        server 497117-web-01 54.237.63.166:80 check
-        server 497117-web-02 52.3.247.149:80 check
+        server 497117-web-01 100.26.56.137:80 check
+        server 497117-web-02 34.224.6.137:80 check
